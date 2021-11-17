@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side-one{
+    width: 150px;
+    background-color: black;
+    padding: 0 15px;    
+}
+.side-two{
+    width: calc(100% - 150px);
+    
+}
+
+nav{
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: white;
+    filter: opacity(.7); 
+}
+
+main{
+    height: 100%;
+    background-color: blueviolet;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: #282828;
+    position: fixed;
+    bottom: 0;
+    z-index: 500;
+}
+
+/* ----sidebar---- */
+
+.logo-container{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background-color: tomato;
+}
+
+.piccolo{
+    display: none;
+}
+
+.grande{
+    width: 100%;
+}
+
+/* .content-side-one{
+    color: white;
+    background-color: tomato;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.icone{
+    width: 30px;
+    background-color: black;
+}
+
+.testo{
+    width: calc(100% - 30px);
+    background-color: black;
+}
+
+.playlist{
+    width: 100%;
+    background-color: black;
+}
+
+.lista-playlist{
+    overflow:auto;
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    color: white;
+    background-color: black;
+}
+
+.user{
+    width: 50px;
+    height: 20px;
+    background-color:teal;
+    justify-self: flex-end;
+} */
