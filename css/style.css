@@ -64,7 +64,7 @@ footer{
     width: 100%;
 }
 
-/* .content-side-one{
+.content-side-one{
     color: white;
     background-color: tomato;
     width: 100%;
@@ -110,4 +110,4 @@ li{
     height: 20px;
     background-color:teal;
     justify-self: flex-end;
-} */
+}
