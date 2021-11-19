@@ -35,9 +35,9 @@
     
                 <div class="playlist-box hidden">
                     <div class="white"><b>PLAYLIST</b></div>
-                    <div class="add-playlist centra-verticalmente">
-                        <div class="button"><b>+</b></div>
-                        <div class="riduci-font grey">Crea Playlist</div>
+                    <div class="add-playlist centra-verticalmente grey">
+                        <i class="fas fa-plus-square"></i>
+                        <div class="riduci-font">Crea Playlist</div>
                     </div>
                 </div>
                 
@@ -70,7 +70,10 @@
         </div>
         
         <main>
-            <header></header>
+            <header class="centra-verticalmente" id="button-header">
+                <button class="white">EFFETTUA LUPGRADE</button>
+            </header>
+
             <nav class="centra-verticalmente grey">
                 <div>IN EVIDENZA</div>
                 <div>PODCAST</div>
@@ -85,8 +88,9 @@
                 <h3 class="white"><b>Recently Played</b></h3>
 
                 <div class="riga-music">
+
                     <div class="card-music">
-                        <img src="./img/metal_lifting.jpg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/metal_lifting.jpg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Heavy Metal</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -94,7 +98,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/stranger.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/stranger.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -102,7 +106,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/aquietplace.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/aquietplace.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>A quiet place</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -110,7 +114,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/split.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/split.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Split</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -118,7 +122,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/cure.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/cure.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>A cure for wellness</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -126,7 +130,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/sinister.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/sinister.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Sinister</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -142,7 +146,7 @@
                 
                 <div class="riga-music-user">
                     <div class="card-music">
-                        <img src="./img/radar.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/radar.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Release Radar</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -150,7 +154,7 @@
                     </div>
 
                     <div class="card-music">
-                        <img src="./img/mixdaily.jpeg" alt="">
+                        <div class="box-img"><i class="far fa-play-circle white"></i><img class="img-over" src="./img/mixdaily.jpeg" alt=""></div>
                         <div class="info-music">
                             <h6 class="white"><b>Daily Mix 1</b></h6>
                             <span class="riduci-font grey">Subtitle</span>
@@ -177,13 +181,23 @@
             </div>
         </main>
 
-        
     </div>
 
     <footer class="centra-verticalmente">
         
         <div class="footer-left">
-            
+            <div class="brano-in-corso">
+                <img src="./img/sinister.jpeg" alt="">
+                <div class="info-brano-in-corso riduci-font">
+                    <div class="titolo-brano  white"><b>Sinister</b></div>
+                    <div class="sottotitolo-brano grey">Brano Nome</div>
+                </div>
+            </div>
+
+            <div class="like-brano grey">
+                <i class="far fa-heart"></i>
+                <i class="far fa-folder"></i>
+            </div>
         </div>
         
         <div class="footer-center">
@@ -195,11 +209,18 @@
                 <i class="fas fa-redo-alt"></i>
             </div>
             <div class="sound-bar-box">
-                <input class="sound-bar" type="range" id="progress-bar">
+                <input class="progress-bar" type="range">
             </div>
         </div>
         
-        <div class="footer-right"></div>
+        <div class="footer-right centra-verticalmente grey">
+            <div class="box-suono">
+                <i class="fas fa-list"></i>
+                <i class="fas fa-desktop"></i>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <input class="progress-bar" id="sound-bar" type="range">
+        </div>
     </footer>
 
 </body>
